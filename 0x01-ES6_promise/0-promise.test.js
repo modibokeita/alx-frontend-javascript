@@ -1,4 +1,4 @@
-import getResponseFromAPI from './0-promise.js';
+import getResponseFromAPI from './0-promise';
 
 test('getResponseFromAPI returns a Promise', () => {
   const response = getResponseFromAPI();
