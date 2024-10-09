@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("".concat("John".charAt(0),". ").concat("Doe"));var o=function(){function o(o,t){this.firstName=o,this.lastName=t}return o.prototype.workOnHomework=function(){return"Currently working"},o.prototype.displayName=function(){return this.firstName},o}(),t=new o("Jane","Smith");console.log(t.displayName()),console.log(t.workOnHomework())})();
