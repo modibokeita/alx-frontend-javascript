@@ -1,0 +1,1 @@
+(()=>{"use strict";var a,o=(console.log("Insert row",{firstName:"Guillaume",lastName:"Salva"}),Math.floor(Math.random()*Math.floor(1e3)));!function(a){console.log(`Update row ${a}`,{firstName:"Guillaume",lastName:"Salva",age:23})}(o),a=o,console.log("Delete row id",a)})();
