@@ -62,8 +62,20 @@ function executeWork(employee: Director | Teacher): void {
     console.log(employee.workTeacherTasks());
   }
 }
+type Subjects = 'Math' | 'History';
 
-executeWork(createEmployee(200)); 
+// Function to teach a class based on the Subjects type
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  } else if (todayClass === 'History') {
+    return 'Teaching History';
+  }
+  // The following return is not necessary because of the Subjects type constraint,
+  // but it can be helpful for TypeScript's type checking.
+  return 'Unknown subject';
+}
+executeWork(createEmployee(200));
 executeWork(createEmployee(1000));
 console.log(createEmployee(200));
 console.log(createEmployee(1000));
