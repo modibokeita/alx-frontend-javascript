@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("Major Credits Sum:",{credits:7,brand:"MajorCredits"}),console.log("Minor Credits Sum:",{credits:3,brand:"MinorCredits"})})();
