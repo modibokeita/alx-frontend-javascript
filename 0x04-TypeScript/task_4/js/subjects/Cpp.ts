@@ -1,6 +1,5 @@
-
 namespace Subjects {
- 
+  // Using declaration merging to add an optional attribute
   export interface Teacher {
     experienceTeachingC?: number;
   }
@@ -11,12 +10,10 @@ namespace Subjects {
     }
 
     getAvailableTeacher(): string {
-      if (this.teacher?.experienceTeachingC && this.teacher.experienceTeachingC > 0) {
+      if (this.teacher.experienceTeachingC && this.teacher.experienceTeachingC > 0) {
         return `Available Teacher: ${this.teacher.firstName}`;
-      } else {
-        return 'No available teacher';
       }
+      return 'No available teacher';
     }
   }
 }
-
